@@ -64,7 +64,6 @@ button {
 }
 .page-navigation {
   display: flex;
-  column-gap: 76px;
   justify-content: space-between;
   align-items: center;
 }
