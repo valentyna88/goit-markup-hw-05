@@ -507,21 +507,43 @@
     <!-- ==========MODAL WINDOW========== -->
     <div class="backdrop">
       <div class="modal">
-        <button class="close-btn" type="button">
-          <svg class="close-icon" width="8" height="8">
+        <button class="modal-close-btn" type="button">
+          <svg class="modal-close-btn-icon" width="8" height="8">
             <use href=""></use>
           </svg>
         </button>
-        <p class="form-text">Leave your contacts and we will call you back</p>
-        <form class="modal-form">
-          <label for="username">Name</label
+        <p class="review-form-description">
+          Leave your contacts and we will call you back
+        </p>
+        <form class="review-form">
+          <div class="review-form-field-wrapper">
+            <label class="review-form-field-label" for="user-first-name"
+              >Name</label
+            >
+            <div class="review-form-input-wrapper">
+              <input
+                class="review-form-input"
+                id="user-first-name"
+                type="text"
+                name="user-first-name"
+                pattern="[a-zA-Zа-яА-ЯіІїЇєЄґҐʼ]+"
+                title="Valentyna"
+                required
+              />
+              <svg class="review-form-field-icon" width="" height="">
+                <use href=""></use>
+              </svg>
+            </div>
+          </div>
+
+          <!-- <label for="username">Name</label
           ><input type="text" name="username" id="username" />
           <label for="phone">Phone</label
           ><input type="tel" name="phone" id="phone" />
           <label for="email">E-mail</label
-          ><input type="email" name="email" id="email" />
+          ><input type="email" name="email" id="email" /> -->
 
-          <textarea name="" id="" cols="30" rows="10"></textarea>
+          <!-- <textarea name="" id="" cols="30" rows="10"></textarea> -->
         </form>
       </div>
     </div>
