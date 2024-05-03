@@ -504,13 +504,13 @@
         </div>
       </div>
     </footer>
-    <!-- ==========MODAL WINDOW========== -->
+    <!-- ==========BACKDROP========== -->
     <div class="backdrop">
       <div class="modal">
         <button class="modal-close-btn" type="button">
-          <svg class="modal-close-btn-icon" width="8" height="8">
+          <!-- <svg class="modal-close-btn-icon" width="8" height="8">
             <use href=""></use>
-          </svg>
+          </svg> -->
         </button>
         <p class="review-form-description">
           Leave your contacts and we will call you back
@@ -530,20 +530,76 @@
                 title="Valentyna"
                 required
               />
-              <svg class="review-form-field-icon" width="" height="">
+              <!-- <svg class="review-form-field-icon" width="" height="">
                 <use href=""></use>
-              </svg>
+              </svg> -->
             </div>
           </div>
 
-          <!-- <label for="username">Name</label
-          ><input type="text" name="username" id="username" />
-          <label for="phone">Phone</label
-          ><input type="tel" name="phone" id="phone" />
-          <label for="email">E-mail</label
-          ><input type="email" name="email" id="email" /> -->
+          <div class="review-form-field-wrapper">
+            <label class="review-form-field-label" for="user-tel">Phone</label>
+            <div class="review-form-input-wrapper">
+              <input
+                class="review-form-input"
+                id="user-tel"
+                type="tel"
+                name="user-tel"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                title="xxx-xxx-xx-xx"
+                required
+              />
+              <!-- <svg class="review-form-field-icon" width="" height="">
+                <use href=""></use>
+              </svg> -->
+            </div>
+          </div>
 
-          <!-- <textarea name="" id="" cols="30" rows="10"></textarea> -->
+          <div class="review-form-field-wrapper">
+            <label class="review-form-field-label" for="user-email"
+              >E-mail</label
+            >
+            <div class="review-form-input-wrapper">
+              <input
+                class="review-form-input"
+                id="user-email"
+                type="email"
+                name="user-email"
+                required
+              />
+              <!-- <svg class="review-form-field-icon" width="" height="">
+                <use href=""></use>
+              </svg> -->
+            </div>
+          </div>
+
+          <div class="review-form-field-wrapper">
+            <label class="review-form-field-label" for="user-comment"
+              >Comment</label
+            >
+            <textarea
+              class="review-form-message"
+              id="user-comment"
+              name="user-comment"
+              required
+              placeholder="Text input"
+            ></textarea>
+          </div>
+
+          <div class="review-form-checkbox-wrapper">
+            <input
+              class="review-form-checkbox"
+              id="privacy-policy"
+              type="checkbox"
+              name="privacy-policy"
+              value="true"
+              required
+            />
+            <label class="review-form-checkbox-label" for="privacy-policy"
+              >I accept the terms and conditions of the
+              <a class="privacy-policy-link" href="">Privacy Policy</a></label
+            >
+          </div>
+          <button class="review-form-submit" type="submit">Send</button>
         </form>
       </div>
     </div>
