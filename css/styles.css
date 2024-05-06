@@ -615,7 +615,10 @@ input {
   border: 1px solid rgba(46, 47, 66, 0.4);
   cursor: pointer;
   fill: transparent;
-  
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+              border 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+              fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 .modal-form-checkbox:checked + .modal-form-checkbox-label .modal-form-own-checkbox {
   background-color: #404bbf;
